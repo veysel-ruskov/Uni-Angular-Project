@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  colors: string[]
+  favoriteColor!: string;
+
+  constructor() {
+    this.colors = ['red', 'green', 'blue']
+    
+  }
 
   ngOnInit(): void {
   }
